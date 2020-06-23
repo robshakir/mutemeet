@@ -1,6 +1,5 @@
 tell application "Google Chrome"
     activate
-    set i to 0
     repeat with w in (windows) -- loop over each window
         set j to 1 -- tabs are not zeroeth
         repeat with t in (tabs of w) -- loop over each tab
@@ -14,6 +13,5 @@ tell application "Google Chrome"
             end if
             set j to j + 1
         end repeat
-        set i to i + 1
     end repeat
 end tell
